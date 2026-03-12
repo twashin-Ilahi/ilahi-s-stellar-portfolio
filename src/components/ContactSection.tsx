@@ -21,13 +21,21 @@ const ContactSection = () => {
       <AnimatedSection delay={0.1}>
         <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
           <a
-            href="mailto:twashinilahi231@gmail.com"
+            href="mailto:twashinilahi990@gmail.com"
             className="flex items-center gap-2 px-5 py-2.5 rounded-lg glass-card text-sm font-body text-foreground hover:border-primary/40 transition-colors"
           >
-            <Mail className="w-4 h-4 text-primary" /> twashinilahi231@gmail.com
+            <Mail className="w-4 h-4 text-primary" /> twashinilahi990@gmail.com
           </a>
           <a
-            href="https://www.linkedin.com/in/md-twashin-ilahi"
+            href="https://priormailid.vercel.app/twashin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-lg glass-card text-sm font-body text-foreground hover:border-primary/40 transition-colors"
+          >
+            <Send className="w-4 h-4 text-primary" /> Prior Mail
+          </a>
+          <a
+            href="https://www.linkedin.com/in/md-twashin-ilahi-b9baa4261/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2.5 rounded-lg glass-card text-sm font-body text-foreground hover:border-primary/40 transition-colors"

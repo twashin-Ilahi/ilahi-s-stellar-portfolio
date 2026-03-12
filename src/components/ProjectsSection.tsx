@@ -61,6 +61,7 @@ const projects = [
     title: "NavEye",
     desc: "Hands-free eye-tracking computer navigation",
     tags: ["HCI", "Accessibility"],
+    live: true,
     link: "https://www.naveye.site/",
     details:
       "Developed a hands-free scrolling system via eye tracking — using your eye as a 3rd hand for computer navigation. Designed for accessibility and assistive technology applications.",

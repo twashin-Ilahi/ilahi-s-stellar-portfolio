@@ -19,7 +19,7 @@ const AboutSection = () => (
     <div className="grid md:grid-cols-2 gap-12 mt-10">
       <AnimatedSection delay={0.1}>
         <p className="text-foreground/85 font-body text-base md:text-lg leading-relaxed">
-          I'm Twashin — a 17-year-old STEM innovator from Chapainawabganj, Bangladesh.
+          I'm Twashin Ilahi — a 17-year-old STEM innovator from Chapainawabganj, Bangladesh.
           I've interned at NASA, conducted research at Harvard and UC Berkeley,
           contributed to a lunar satellite mission, founded multiple organizations,
           and published research recognized internationally.
