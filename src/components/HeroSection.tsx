@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import StarField from "./StarField";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown, Download, FileSearch } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const badges = ["NASA", "Harvard", "UC Berkeley", "CERN", "UN"];
@@ -61,6 +61,14 @@ const HeroSection = () => (
           className="px-8 py-3.5 rounded-lg border border-primary/40 text-primary font-body font-semibold text-sm tracking-wide hover:bg-primary/10 transition-colors flex items-center gap-2"
         >
           Download CV <Download className="w-4 h-4" />
+        </a>
+        <a
+          href="/Md_Twashin_Ilahi_Deep_Research.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3.5 rounded-lg border border-primary/40 text-primary font-body font-semibold text-sm tracking-wide hover:bg-primary/10 transition-colors flex items-center gap-2"
+        >
+          Deep Research <FileSearch className="w-4 h-4" />
         </a>
       </motion.div>
 
