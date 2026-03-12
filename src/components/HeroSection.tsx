@@ -17,7 +17,7 @@ const HeroSection = () => (
         className="mx-auto mb-8 w-36 h-36 md:w-44 md:h-44 rounded-full glow-blue flex items-center justify-center border-2 border-primary/40 bg-muted/40 backdrop-blur overflow-hidden"
       >
         <img
-          src="src/assets/profile-photo.jpg"
+          src={profilePhoto}
           alt="Md Twashin Ilahi"
           className="w-full h-full object-cover"
         />
