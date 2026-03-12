@@ -96,6 +96,13 @@
   .section-padding {
     @apply py-20 md:py-32 px-4 md:px-8;
   }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 /* Scrollbar */
