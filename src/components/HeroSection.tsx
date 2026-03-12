@@ -6,7 +6,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 const badges = ["NASA", "Harvard", "UC Berkeley", "CERN", "UN"];
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+  <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-16">
     <StarField />
     <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
       {/* Profile photo */}
