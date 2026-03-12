@@ -6,6 +6,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ResearchSection from "@/components/ResearchSection";
 import AwardsSection from "@/components/AwardsSection";
+import NewsSection from "@/components/NewsSection";
 import SkillsSection from "@/components/SkillsSection";
 import WritingsSection from "@/components/WritingsSection";
 import GallerySection from "@/components/GallerySection";
