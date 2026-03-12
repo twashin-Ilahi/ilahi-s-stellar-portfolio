@@ -25,7 +25,7 @@ const AboutSection = () => (
           and published research recognized internationally.
         </p>
         <p className="text-muted-foreground font-body text-base md:text-lg leading-relaxed mt-4">
-          My mission: make science and technology accessible to every student, everywhere.
+          My mission: <span className="text-foreground font-semibold">Innovation for the Betterment of Humanity.</span>
         </p>
       </AnimatedSection>
 
