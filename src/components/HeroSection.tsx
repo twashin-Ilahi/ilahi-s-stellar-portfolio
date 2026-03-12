@@ -8,14 +8,18 @@ const HeroSection = () => (
   <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
     <StarField />
     <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
-      {/* Profile placeholder */}
+      {/* Profile photo */}
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="mx-auto mb-8 w-36 h-36 md:w-44 md:h-44 rounded-full glow-blue flex items-center justify-center border-2 border-primary/40 bg-muted/40 backdrop-blur"
+        className="mx-auto mb-8 w-36 h-36 md:w-44 md:h-44 rounded-full glow-blue flex items-center justify-center border-2 border-primary/40 bg-muted/40 backdrop-blur overflow-hidden"
       >
-        <span className="text-muted-foreground text-sm font-body">[ Photo ]</span>
+        <img
+          src="src/assets/profile-photo.jpg"
+          alt="Md Twashin Ilahi"
+          className="w-full h-full object-cover"
+        />
       </motion.div>
 
       <motion.h1
