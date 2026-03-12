@@ -2,9 +2,9 @@ import AnimatedSection from "./AnimatedSection";
 import CounterStat from "./CounterStat";
 
 const stats = [
-  { value: 3000, suffix: "+", label: "Students Trained" },
+  { value: 5000, suffix: "+", label: "Students Trained" },
   { value: 27, label: "Seminars Across 12 Cities" },
-  { value: 10000, suffix: "+", label: "Users Reached" },
+  { value: 20000, suffix: "+", label: "Users Reached" },
   { value: 25, suffix: "+", label: "Countries" },
   { value: 5, label: "Research Papers" },
 ];

@@ -36,11 +36,11 @@ const projects = [
     icon: LifeBuoy,
     title: "Uddhar",
     desc: "Flood rescue digital platform",
-    meta: "10,000+ users · 150+ volunteers",
+    meta: "20,000+ users · 150+ volunteers",
     tags: ["Social Impact", "Web"],
     live: true,
     details:
-      "Co-founded and directed a digital platform (WebApp, Social Media, Ground Team) to connect victims and rescuers during the '24 floods. Tracked needs, shelter locations, and missing persons, reaching 10,000+ users and aiding 50+ families with 150+ volunteers.",
+      "Co-founded and directed a digital platform (WebApp, Social Media, Ground Team) to connect victims and rescuers during the '24 floods. Tracked needs, shelter locations, and missing persons, reaching 20,000+ users and aiding 500+ families with 150+ volunteers.",
     role: "Co-Founder & CEO",
     year: "2025–Present",
   },
