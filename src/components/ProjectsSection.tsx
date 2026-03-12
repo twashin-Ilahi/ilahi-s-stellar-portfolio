@@ -152,14 +152,28 @@ const ProjectsSection = () => {
                 </DialogDescription>
               </DialogHeader>
 
-              {selected.meta && (
+              {selected.link && (
+                <div className="mt-4">
+                  <a
+                    href={selected.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-body font-medium hover:bg-primary/90 transition-colors"
+                  >
+                    Visit Website
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              )}
+
+              {selected.meta && !selected.link && (
                 <div className="flex items-center gap-2 text-xs text-primary/80 font-body mt-1">
                   <ExternalLink className="w-3 h-3" />
                   {selected.meta}
                 </div>
               )}
 
-              <div className="flex flex-wrap gap-2 mt-2">
+              <div className="flex flex-wrap gap-2 mt-4">
                 {selected.tags.map((t) => (
                   <span
                     key={t}
