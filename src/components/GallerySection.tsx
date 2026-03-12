@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AnimatedSection from "./AnimatedSection";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { ChevronDown } from "lucide-react";
 
 import galleryGeniusOlympiad from "@/assets/gallery-genius-olympiad.jpg";
 import galleryUnAssembly from "@/assets/gallery-un-assembly.jpg";
@@ -22,16 +23,32 @@ import galleryUnLobby from "@/assets/gallery-un-lobby.jpg";
 import galleryUddharFieldops from "@/assets/gallery-uddhar-fieldops.jpg";
 import galleryBdFlagPortrait from "@/assets/gallery-bd-flag-portrait.jpg";
 import gallerySeminarSpeaking from "@/assets/gallery-seminar-speaking.jpg";
+import galleryNasaLogo from "@/assets/gallery-nasa-logo.jpg";
+import gallerySpaceCenter from "@/assets/gallery-space-center.jpg";
+import galleryTorontoTalk from "@/assets/gallery-toronto-talk.jpg";
+import galleryRobot from "@/assets/gallery-robot.jpg";
+import gallerySchoolSeminar1 from "@/assets/gallery-school-seminar1.jpg";
+import gallerySchoolSeminar2 from "@/assets/gallery-school-seminar2.jpg";
+import gallerySchoolSeminar3 from "@/assets/gallery-school-seminar3.jpg";
+import gallerySchoolSeminar4 from "@/assets/gallery-school-seminar4.jpg";
+import gallerySchoolSeminar5 from "@/assets/gallery-school-seminar5.jpg";
+import galleryWiceAward from "@/assets/gallery-wice-award.jpg";
 
 const items = [
   { src: galleryConradChallenge, label: "NASA Conrad Challenge – Presenting" },
+  { src: galleryNasaLogo, label: "At NASA" },
+  { src: gallerySpaceCenter, label: "Space Center Houston" },
   { src: galleryUnAssembly, label: "UN General Assembly" },
   { src: galleryGeniusOlympiad, label: "GENIUS Olympiad – Bronze Medal" },
   { src: galleryTechnoxian, label: "TechnoXian Robotics Championship" },
   { src: galleryGeniusPoster, label: "GENIUS Olympiad – HydroPlasmaX Poster" },
   { src: galleryNasaConrad, label: "NASA Conrad Summit" },
+  { src: galleryWiceAward, label: "WICE 2024 – Award Ceremony" },
   { src: galleryUnSphere, label: "UN Headquarters – Sphere Sculpture" },
   { src: galleryUnCouncil, label: "UN Trusteeship Council" },
+  { src: galleryRobot, label: "Robotics Project" },
+  { src: gallerySchoolSeminar1, label: "iSpark – School Seminar" },
+  { src: gallerySchoolSeminar2, label: "iSpark – Teaching Students" },
   { src: galleryUddharFieldops, label: "Uddhar – Field Operations" },
   { src: gallerySeminarSpeaking, label: "Seminar – Public Speaking" },
   { src: galleryTrophy, label: "TechnoXian Trophy" },
@@ -40,14 +57,23 @@ const items = [
   { src: galleryUnFlag, label: "UN Flag – Dag Hammarskjöld Quote" },
   { src: galleryMandelaStatue, label: "Nelson Mandela Statue – UN" },
   { src: galleryUnLobby, label: "UN Headquarters – Lobby" },
+  { src: galleryTorontoTalk, label: "University of Toronto – Conference" },
+  { src: gallerySchoolSeminar3, label: "iSpark – Classroom Session" },
+  { src: gallerySchoolSeminar4, label: "iSpark – Q&A Session" },
+  { src: gallerySchoolSeminar5, label: "iSpark – Full Classroom" },
   { src: galleryBangladeshFlag, label: "Bangladesh Embassy" },
   { src: galleryTechnoxianFlag, label: "TechnoXian – Representing Bangladesh" },
   { src: galleryGeniusStage, label: "GENIUS Olympiad – Award Ceremony" },
   { src: galleryBdFlagPortrait, label: "With Bangladesh Flag" },
 ];
 
+const INITIAL_COUNT = 12;
+
 const GallerySection = () => {
   const [selected, setSelected] = useState<(typeof items)[0] | null>(null);
+  const [showAll, setShowAll] = useState(false);
+
+  const visible = showAll ? items : items.slice(0, INITIAL_COUNT);
 
   return (
     <section className="section-padding max-w-6xl mx-auto">
@@ -56,7 +82,7 @@ const GallerySection = () => {
       </AnimatedSection>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {items.map((item, i) => (
+        {visible.map((item, i) => (
           <AnimatedSection key={item.label} delay={i * 0.06}>
             <button
               onClick={() => setSelected(item)}
@@ -75,6 +101,17 @@ const GallerySection = () => {
           </AnimatedSection>
         ))}
       </div>
+
+      {!showAll && items.length > INITIAL_COUNT && (
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setShowAll(true)}
+            className="flex items-center gap-2 px-6 py-3 rounded-lg border border-primary/40 text-primary font-body font-semibold text-sm tracking-wide hover:bg-primary/10 transition-colors"
+          >
+            Show More ({items.length - INITIAL_COUNT} more) <ChevronDown className="w-4 h-4" />
+          </button>
+        </div>
+      )}
 
       <Dialog open={!!selected} onOpenChange={() => setSelected(null)}>
         <DialogContent className="max-w-3xl p-2 bg-card/95 backdrop-blur-2xl border-border">
