@@ -1,5 +1,6 @@
 import AnimatedSection from "./AnimatedSection";
 import CounterStat from "./CounterStat";
+import galleryConradExomax from "@/assets/gallery-conrad-exomax.jpg";
 
 const stats = [
   { value: 5000, suffix: "+", label: "Students Trained" },
