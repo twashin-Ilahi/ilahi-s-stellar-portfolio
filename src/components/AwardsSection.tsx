@@ -64,19 +64,19 @@ const featured: Award[] = [
       { label: "CERN BL4S Winners (Page 3)", url: "https://beamlineforschools.cern/past-editions" },
     ],
   },
-];
-
-const others: Award[] = [
   {
     emoji: "🏆",
     title: "Runners-up, TechnoXian World Robotics Championship 2025",
-    sub: "New Delhi, India",
+    sub: "New Delhi, India — Innovation Challenge Jr.",
     details:
       "The world's largest robotics championship series, held in New Delhi, India. Awarded Global Runner-Up in the Innovation Challenge Jr. category as part of Team Harimohan Science Club.",
     sources: [
       { label: "TechnoXian Results", url: "https://technoxian.com/" },
     ],
   },
+];
+
+const others: Award[] = [
   { emoji: "🥇", title: "Gold Medal, World Invention Competition, Malaysia 2024", sub: "" },
   { emoji: "🥇", title: "Gold Medal, World Innovative Science Project Olympiad, Indonesia 2024", sub: "" },
   { emoji: "🥇", title: "Gold Medal, International Science & Innovation Fair (ISIF) 2024", sub: "" },
