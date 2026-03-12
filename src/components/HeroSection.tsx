@@ -64,11 +64,10 @@ const HeroSection = () => (
         </a>
         <a
           href="/Md_Twashin_Ilahi_Deep_Research.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
+          download
           className="px-8 py-3.5 rounded-lg border border-primary/40 text-primary font-body font-semibold text-sm tracking-wide hover:bg-primary/10 transition-colors flex items-center gap-2"
         >
-          Deep Research <FileSearch className="w-4 h-4" />
+          Gemini's Insight <FileSearch className="w-4 h-4" />
         </a>
       </motion.div>
 
