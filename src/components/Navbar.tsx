@@ -8,6 +8,7 @@ const links = [
   { label: "Projects", href: "#projects" },
   { label: "Research", href: "#research" },
   { label: "Awards", href: "#awards" },
+  { label: "News", href: "#news" },
   { label: "Skills", href: "#skills" },
   { label: "Writings", href: "#writings" },
   { label: "Gallery", href: "#gallery" },
