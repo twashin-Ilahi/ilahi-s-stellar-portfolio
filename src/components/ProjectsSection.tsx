@@ -17,6 +17,7 @@ const projects = [
     meta: "7,000+ users · 25+ countries",
     tags: ["AI", "EdTech", "Web"],
     live: true,
+    link: "https://chemstudio.xyz",
     details:
       "Founded ChemStudio, an AI-powered virtual chemistry lab reaching 7,000+ users in 25+ countries. Built 118 element simulations with AI explanations, scaling globally to make labs accessible for underprivileged students.",
     role: "Founder & Project Lead",
@@ -39,6 +40,7 @@ const projects = [
     meta: "20,000+ users · 150+ volunteers",
     tags: ["Social Impact", "Web"],
     live: true,
+    link: "https://uddhar.com",
     details:
       "Co-founded and directed a digital platform (WebApp, Social Media, Ground Team) to connect victims and rescuers during the '24 floods. Tracked needs, shelter locations, and missing persons, reaching 20,000+ users and aiding 500+ families with 150+ volunteers.",
     role: "Co-Founder & CEO",
@@ -59,6 +61,7 @@ const projects = [
     title: "NavEye",
     desc: "Hands-free eye-tracking computer navigation",
     tags: ["HCI", "Accessibility"],
+    link: "https://www.naveye.site/",
     details:
       "Developed a hands-free scrolling system via eye tracking — using your eye as a 3rd hand for computer navigation. Designed for accessibility and assistive technology applications.",
     role: "Developer",
@@ -149,14 +152,28 @@ const ProjectsSection = () => {
                 </DialogDescription>
               </DialogHeader>
 
-              {selected.meta && (
+              {selected.link && (
+                <div className="mt-4">
+                  <a
+                    href={selected.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-body font-medium hover:bg-primary/90 transition-colors"
+                  >
+                    Visit Website
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              )}
+
+              {selected.meta && !selected.link && (
                 <div className="flex items-center gap-2 text-xs text-primary/80 font-body mt-1">
                   <ExternalLink className="w-3 h-3" />
                   {selected.meta}
                 </div>
               )}
 
-              <div className="flex flex-wrap gap-2 mt-2">
+              <div className="flex flex-wrap gap-2 mt-4">
                 {selected.tags.map((t) => (
                   <span
                     key={t}
