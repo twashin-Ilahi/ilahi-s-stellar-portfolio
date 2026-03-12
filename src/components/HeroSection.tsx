@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import StarField from "./StarField";
-import { ArrowDown, Download, FileSearch } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import geminiLogo from "@/assets/gemini-logo.png";
 
 const badges = ["NASA", "Harvard", "UC Berkeley", "CERN", "UN"];
 
