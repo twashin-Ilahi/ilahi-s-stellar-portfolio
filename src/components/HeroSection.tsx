@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import StarField from "./StarField";
 import { ArrowDown, Download } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const badges = ["NASA", "Harvard", "UC Berkeley", "CERN", "UN"];
 
