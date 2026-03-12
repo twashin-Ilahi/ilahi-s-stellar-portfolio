@@ -12,18 +12,38 @@ import galleryGeniusStage from "@/assets/gallery-genius-stage.jpg";
 import galleryTechnoxianFlag from "@/assets/gallery-technoxian-flag.jpg";
 import galleryUnMural from "@/assets/gallery-un-mural.jpg";
 import galleryUnCouncil from "@/assets/gallery-un-council.jpg";
+import galleryConradChallenge from "@/assets/gallery-conrad-challenge.jpg";
+import galleryUnWelcome from "@/assets/gallery-un-welcome.jpg";
+import galleryUnFlag from "@/assets/gallery-un-flag.jpg";
+import galleryMandelaStatue from "@/assets/gallery-mandela-statue.jpg";
+import galleryNasaConrad from "@/assets/gallery-nasa-conrad.jpg";
+import galleryUnSphere from "@/assets/gallery-un-sphere.jpg";
+import galleryUnLobby from "@/assets/gallery-un-lobby.jpg";
+import galleryUddharFieldops from "@/assets/gallery-uddhar-fieldops.jpg";
+import galleryBdFlagPortrait from "@/assets/gallery-bd-flag-portrait.jpg";
+import gallerySeminarSpeaking from "@/assets/gallery-seminar-speaking.jpg";
 
 const items = [
+  { src: galleryConradChallenge, label: "NASA Conrad Challenge – Presenting" },
   { src: galleryUnAssembly, label: "UN General Assembly" },
   { src: galleryGeniusOlympiad, label: "GENIUS Olympiad – Bronze Medal" },
   { src: galleryTechnoxian, label: "TechnoXian Robotics Championship" },
   { src: galleryGeniusPoster, label: "GENIUS Olympiad – HydroPlasmaX Poster" },
-  { src: galleryTrophy, label: "TechnoXian Trophy" },
-  { src: galleryBangladeshFlag, label: "Bangladesh Embassy" },
-  { src: galleryGeniusStage, label: "GENIUS Olympiad – Award Ceremony" },
-  { src: galleryTechnoxianFlag, label: "TechnoXian – Representing Bangladesh" },
-  { src: galleryUnMural, label: "UN Headquarters – Mural Hall" },
+  { src: galleryNasaConrad, label: "NASA Conrad Summit" },
+  { src: galleryUnSphere, label: "UN Headquarters – Sphere Sculpture" },
   { src: galleryUnCouncil, label: "UN Trusteeship Council" },
+  { src: galleryUddharFieldops, label: "Uddhar – Field Operations" },
+  { src: gallerySeminarSpeaking, label: "Seminar – Public Speaking" },
+  { src: galleryTrophy, label: "TechnoXian Trophy" },
+  { src: galleryUnMural, label: "UN Headquarters – Mural Hall" },
+  { src: galleryUnWelcome, label: "Welcome to the United Nations" },
+  { src: galleryUnFlag, label: "UN Flag – Dag Hammarskjöld Quote" },
+  { src: galleryMandelaStatue, label: "Nelson Mandela Statue – UN" },
+  { src: galleryUnLobby, label: "UN Headquarters – Lobby" },
+  { src: galleryBangladeshFlag, label: "Bangladesh Embassy" },
+  { src: galleryTechnoxianFlag, label: "TechnoXian – Representing Bangladesh" },
+  { src: galleryGeniusStage, label: "GENIUS Olympiad – Award Ceremony" },
+  { src: galleryBdFlagPortrait, label: "With Bangladesh Flag" },
 ];
 
 const GallerySection = () => {
