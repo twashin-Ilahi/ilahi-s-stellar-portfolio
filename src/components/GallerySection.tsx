@@ -3,67 +3,113 @@ import AnimatedSection from "./AnimatedSection";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronDown } from "lucide-react";
 
-import galleryGeniusOlympiad from "@/assets/gallery-genius-olympiad.jpg";
-import galleryUnAssembly from "@/assets/gallery-un-assembly.jpg";
-import galleryTechnoxian from "@/assets/gallery-technoxian.jpg";
-import galleryGeniusPoster from "@/assets/gallery-genius-poster.jpg";
-import galleryTrophy from "@/assets/gallery-trophy.jpg";
-import galleryBangladeshFlag from "@/assets/gallery-bangladesh-flag.jpg";
-import galleryGeniusStage from "@/assets/gallery-genius-stage.jpg";
-import galleryTechnoxianFlag from "@/assets/gallery-technoxian-flag.jpg";
-import galleryUnMural from "@/assets/gallery-un-mural.jpg";
-import galleryUnCouncil from "@/assets/gallery-un-council.jpg";
+// NASA Conrad Challenge & Space Center Houston
 import galleryConradChallenge from "@/assets/gallery-conrad-challenge.jpg";
-import galleryUnWelcome from "@/assets/gallery-un-welcome.jpg";
-import galleryUnFlag from "@/assets/gallery-un-flag.jpg";
-import galleryMandelaStatue from "@/assets/gallery-mandela-statue.jpg";
 import galleryNasaConrad from "@/assets/gallery-nasa-conrad.jpg";
-import galleryUnSphere from "@/assets/gallery-un-sphere.jpg";
-import galleryUnLobby from "@/assets/gallery-un-lobby.jpg";
-import galleryUddharFieldops from "@/assets/gallery-uddhar-fieldops.jpg";
-import galleryBdFlagPortrait from "@/assets/gallery-bd-flag-portrait.jpg";
-import gallerySeminarSpeaking from "@/assets/gallery-seminar-speaking.jpg";
 import galleryNasaLogo from "@/assets/gallery-nasa-logo.jpg";
 import gallerySpaceCenter from "@/assets/gallery-space-center.jpg";
-import galleryTorontoTalk from "@/assets/gallery-toronto-talk.jpg";
+import galleryConradLunar from "@/assets/gallery-conrad-lunar.jpg";
+import galleryConradExomax from "@/assets/gallery-conrad-exomax.jpg";
+import galleryConradVenue1 from "@/assets/gallery-conrad-venue1.jpg";
+import galleryConradVenue2 from "@/assets/gallery-conrad-venue2.jpg";
+
+// United Nations
+import galleryUnAssembly from "@/assets/gallery-un-assembly.jpg";
+import galleryUnAssembly2 from "@/assets/gallery-un-assembly2.jpg";
+import galleryUnCouncil from "@/assets/gallery-un-council.jpg";
+import galleryUnMural from "@/assets/gallery-un-mural.jpg";
+import galleryUnWelcome from "@/assets/gallery-un-welcome.jpg";
+import galleryUnFlag from "@/assets/gallery-un-flag.jpg";
+import galleryUnSphere from "@/assets/gallery-un-sphere.jpg";
+import galleryUnLobby from "@/assets/gallery-un-lobby.jpg";
+import galleryMandelaStatue from "@/assets/gallery-mandela-statue.jpg";
+import galleryUnHorseStatue from "@/assets/gallery-un-horse-statue.jpg";
+import galleryUnBerlinWall from "@/assets/gallery-un-berlin-wall.jpg";
+import galleryUnFlameHope from "@/assets/gallery-un-flame-hope.jpg";
+
+// GENIUS Olympiad
+import galleryGeniusOlympiad from "@/assets/gallery-genius-olympiad.jpg";
+import galleryGeniusPoster from "@/assets/gallery-genius-poster.jpg";
+import galleryGeniusStage from "@/assets/gallery-genius-stage.jpg";
+import galleryGeniusMedal from "@/assets/gallery-genius-medal.jpg";
+
+// TechnoXian Robotics
+import galleryTechnoxian from "@/assets/gallery-technoxian.jpg";
+import galleryTechnoxianFlag from "@/assets/gallery-technoxian-flag.jpg";
+import galleryTrophy from "@/assets/gallery-trophy.jpg";
 import galleryRobot from "@/assets/gallery-robot.jpg";
+
+// WICE
+import galleryWiceAward from "@/assets/gallery-wice-award.jpg";
+
+// iSpark – School Seminars
 import gallerySchoolSeminar1 from "@/assets/gallery-school-seminar1.jpg";
 import gallerySchoolSeminar2 from "@/assets/gallery-school-seminar2.jpg";
 import gallerySchoolSeminar3 from "@/assets/gallery-school-seminar3.jpg";
 import gallerySchoolSeminar4 from "@/assets/gallery-school-seminar4.jpg";
 import gallerySchoolSeminar5 from "@/assets/gallery-school-seminar5.jpg";
-import galleryWiceAward from "@/assets/gallery-wice-award.jpg";
+import gallerySeminarSpeaking from "@/assets/gallery-seminar-speaking.jpg";
+
+// Other
+import galleryTorontoTalk from "@/assets/gallery-toronto-talk.jpg";
+import galleryUddharFieldops from "@/assets/gallery-uddhar-fieldops.jpg";
+import galleryBangladeshFlag from "@/assets/gallery-bangladesh-flag.jpg";
+import galleryBdFlagPortrait from "@/assets/gallery-bd-flag-portrait.jpg";
+import galleryPodcast from "@/assets/gallery-podcast.jpg";
 
 const items = [
+  // NASA Conrad Challenge & Space Center
   { src: galleryConradChallenge, label: "NASA Conrad Challenge – Presenting" },
+  { src: galleryConradExomax, label: "Conrad Challenge – EXO MAX Booth" },
+  { src: galleryConradLunar, label: "Conrad Challenge – Lunar Module" },
+  { src: galleryNasaConrad, label: "NASA Conrad Summit" },
+  { src: galleryConradVenue1, label: "Conrad Summit – Venue Overview" },
+  { src: galleryConradVenue2, label: "Conrad Summit – Space Center Stage" },
   { src: galleryNasaLogo, label: "At NASA" },
   { src: gallerySpaceCenter, label: "Space Center Houston" },
-  { src: galleryUnAssembly, label: "UN General Assembly" },
-  { src: galleryGeniusOlympiad, label: "GENIUS Olympiad – Bronze Medal" },
-  { src: galleryTechnoxian, label: "TechnoXian Robotics Championship" },
-  { src: galleryGeniusPoster, label: "GENIUS Olympiad – HydroPlasmaX Poster" },
-  { src: galleryNasaConrad, label: "NASA Conrad Summit" },
-  { src: galleryWiceAward, label: "WICE 2024 – Award Ceremony" },
-  { src: galleryUnSphere, label: "UN Headquarters – Sphere Sculpture" },
+
+  // United Nations
+  { src: galleryUnAssembly, label: "UN General Assembly Hall" },
+  { src: galleryUnAssembly2, label: "UN General Assembly – Standing" },
   { src: galleryUnCouncil, label: "UN Trusteeship Council" },
-  { src: galleryRobot, label: "Robotics Project" },
-  { src: gallerySchoolSeminar1, label: "iSpark – School Seminar" },
-  { src: gallerySchoolSeminar2, label: "iSpark – Teaching Students" },
-  { src: galleryUddharFieldops, label: "Uddhar – Field Operations" },
-  { src: gallerySeminarSpeaking, label: "Seminar – Public Speaking" },
-  { src: galleryTrophy, label: "TechnoXian Trophy" },
   { src: galleryUnMural, label: "UN Headquarters – Mural Hall" },
   { src: galleryUnWelcome, label: "Welcome to the United Nations" },
   { src: galleryUnFlag, label: "UN Flag – Dag Hammarskjöld Quote" },
-  { src: galleryMandelaStatue, label: "Nelson Mandela Statue – UN" },
+  { src: galleryUnSphere, label: "UN Headquarters – Sphere Sculpture" },
   { src: galleryUnLobby, label: "UN Headquarters – Lobby" },
-  { src: galleryTorontoTalk, label: "University of Toronto – Conference" },
+  { src: galleryMandelaStatue, label: "Nelson Mandela Statue – UN" },
+  { src: galleryUnHorseStatue, label: "UN Grounds – Peace Statue" },
+  { src: galleryUnBerlinWall, label: "Berlin Wall – Trophy of Civil Rights" },
+  { src: galleryUnFlameHope, label: "UN – Flame of Hope Memorial" },
+
+  // GENIUS Olympiad
+  { src: galleryGeniusOlympiad, label: "GENIUS Olympiad – Bronze Medal" },
+  { src: galleryGeniusMedal, label: "GENIUS Olympiad – Medal Ceremony" },
+  { src: galleryGeniusPoster, label: "GENIUS Olympiad – HydroPlasmaX Poster" },
+  { src: galleryGeniusStage, label: "GENIUS Olympiad – Award Ceremony" },
+
+  // TechnoXian Robotics
+  { src: galleryTechnoxian, label: "TechnoXian Robotics Championship" },
+  { src: galleryTechnoxianFlag, label: "TechnoXian – Representing Bangladesh" },
+  { src: galleryTrophy, label: "TechnoXian Trophy" },
+  { src: galleryRobot, label: "Robotics Project" },
+
+  // WICE
+  { src: galleryWiceAward, label: "WICE 2024 – Award Ceremony" },
+
+  // iSpark & Seminars
+  { src: gallerySeminarSpeaking, label: "Seminar – Public Speaking" },
+  { src: gallerySchoolSeminar1, label: "iSpark – School Seminar" },
+  { src: gallerySchoolSeminar2, label: "iSpark – Teaching Students" },
   { src: gallerySchoolSeminar3, label: "iSpark – Classroom Session" },
   { src: gallerySchoolSeminar4, label: "iSpark – Q&A Session" },
   { src: gallerySchoolSeminar5, label: "iSpark – Full Classroom" },
+
+  // Other
+  { src: galleryTorontoTalk, label: "University of Toronto – Conference" },
+  { src: galleryUddharFieldops, label: "Uddhar – Field Operations" },
+  { src: galleryPodcast, label: "Podcast Interview" },
   { src: galleryBangladeshFlag, label: "Bangladesh Embassy" },
-  { src: galleryTechnoxianFlag, label: "TechnoXian – Representing Bangladesh" },
-  { src: galleryGeniusStage, label: "GENIUS Olympiad – Award Ceremony" },
   { src: galleryBdFlagPortrait, label: "With Bangladesh Flag" },
 ];
 
