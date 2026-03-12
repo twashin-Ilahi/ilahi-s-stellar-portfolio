@@ -1,5 +1,6 @@
 import AnimatedSection from "./AnimatedSection";
 import CounterStat from "./CounterStat";
+import galleryConradExomax from "@/assets/gallery-conrad-exomax.jpg";
 
 const stats = [
   { value: 5000, suffix: "+", label: "Students Trained" },
@@ -29,8 +30,8 @@ const AboutSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.2}>
-        <div className="w-full h-64 md:h-80 rounded-xl glass-card flex items-center justify-center">
-          <span className="text-muted-foreground text-sm font-body">[ Action / Event Photo ]</span>
+        <div className="w-full h-64 md:h-80 rounded-xl overflow-hidden glass-card">
+          <img src={galleryConradExomax} alt="Twashin presenting at NASA Conrad Challenge" className="w-full h-full object-cover" />
         </div>
       </AnimatedSection>
     </div>
