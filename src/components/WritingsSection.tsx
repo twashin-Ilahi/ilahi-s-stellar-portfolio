@@ -21,10 +21,10 @@ const articles = [
     url: "https://twashinilahi.medium.com/risk-is-created-not-taken-and-that-changes-everything-05ad6b8a4041",
   },
   {
-    title: "The World and You",
-    excerpt: "When I gaze upon the vastness of this earth…",
-    date: "Jan 30, 2026",
-    url: "https://twashinilahi.medium.com/the-world-and-you-4f33a8901f60",
+    title: "\"Passion\" Is Just Your Personal Product Market Fit",
+    excerpt: "We treat passion like a mystical force. But what if it's just your personal product-market fit?",
+    date: "Nov 14, 2025",
+    url: "https://twashinilahi.medium.com/passion-is-just-your-personal-product-market-fit-2d6c756cec6e",
   },
 ];
 
