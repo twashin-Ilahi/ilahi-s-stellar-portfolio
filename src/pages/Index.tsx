@@ -9,6 +9,7 @@ import ResearchSection from "@/components/ResearchSection";
 import AwardsSection from "@/components/AwardsSection";
 import NewsSection from "@/components/NewsSection";
 import SkillsSection from "@/components/SkillsSection";
+import TrainingSection from "@/components/TrainingSection";
 import WritingsSection from "@/components/WritingsSection";
 import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
@@ -37,6 +38,7 @@ const Index = () => (
     <NewsSection />
     <Divider />
     <SkillsSection />
+    <TrainingSection />
     <WritingsSection />
     <Divider />
     <GallerySection />
