@@ -38,6 +38,7 @@ const Index = () => (
     <NewsSection />
     <Divider />
     <SkillsSection />
+    <TrainingSection />
     <WritingsSection />
     <Divider />
     <GallerySection />
