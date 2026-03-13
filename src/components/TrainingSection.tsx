@@ -4,7 +4,7 @@ import { GraduationCap, ExternalLink } from "lucide-react";
 const programs = [
   {
     title: "MIT LaunchX Entrepreneurship Program",
-    org: "Massachusetts Institute of Technology",
+    org: "LaunchX · Remote",
     date: "2025",
     badge: "Scholarship Recipient",
     notes: [
