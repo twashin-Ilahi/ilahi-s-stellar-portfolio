@@ -5,6 +5,7 @@ const programs = [
   {
     title: "MIT LaunchX Entrepreneurship Program",
     org: "LaunchX · Remote",
+    date: "2025",
     badge: "Scholarship Recipient",
     notes: [
       "Intensive startup-building program — ideation to launch in 5 weeks.",
