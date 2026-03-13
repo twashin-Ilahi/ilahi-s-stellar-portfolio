@@ -3,6 +3,41 @@ import { ExternalLink, Newspaper } from "lucide-react";
 
 const newsItems = [
   {
+    outlet: "The Daily Star",
+    title: "Team of Bangladeshi students win bronze at GENIUS Olympiad 2025",
+    url: "https://www.thedailystar.net/tech-startup/news/team-bangladeshi-students-win-bronze-genius-olympiad-2025-3924331",
+    favicon: "https://www.google.com/s2/favicons?domain=thedailystar.net&sz=64",
+    tag: "International",
+  },
+  {
+    outlet: "TezzFeed",
+    title: "Two young Bangladeshis win gold and silver medals for safe driving device and electric purifier",
+    url: "https://tezzfeed.com/latest-news/two-young-bangladeshis-win-gold-and-silver-medals-for-safe-driving-device-and-electric-purifier-1735021642764",
+    favicon: "https://www.google.com/s2/favicons?domain=tezzfeed.com&sz=64",
+    tag: "International",
+  },
+  {
+    outlet: "Prothom Alo",
+    title: "দুই তরুণের দুই স্বর্ণ ও দুই রৌপ্য জয়",
+    url: "https://www.prothomalo.com/lifestyle/kn23asup4s",
+    favicon: "https://www.google.com/s2/favicons?domain=prothomalo.com&sz=64",
+    tag: "National",
+  },
+  {
+    outlet: "Ajker Patrika",
+    title: "দুই তরুণের বাজিমাত",
+    url: "https://www.ajkerpatrika.com/education/campus/ajp8hhw2mze6p",
+    favicon: "https://www.google.com/s2/favicons?domain=ajkerpatrika.com&sz=64",
+    tag: "National",
+  },
+  {
+    outlet: "TBS Graduates",
+    title: "Bangladeshi school kids make waves in NASA Conrad Challenge",
+    url: "https://tbsgraduates.net/campus/campus-hero/bangladeshi-school-kids-make-wave-in-nasa-conrad-challenge/",
+    favicon: "https://www.google.com/s2/favicons?domain=tbsgraduates.net&sz=64",
+    tag: "International",
+  },
+  {
     outlet: "The Financial Express",
     title: "NASA's Conrad Challenge: Bangladesh high schoolers emerge as top five",
     url: "https://thefinancialexpress.com.bd/education/article/nasas-conrad-challenge-bangladesh-high-schoolers-emerge-as-top-five",
