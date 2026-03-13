@@ -150,11 +150,30 @@ const ResearchSection = () => {
                 </div>
 
                 {selected.doi && (
-                  <div className="flex items-center gap-2 text-xs text-primary/80 font-body">
+                  <a
+                    href={`https://doi.org/${selected.doi}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-xs text-primary/80 font-body hover:text-primary transition-colors"
+                  >
                     <ExternalLink className="w-3 h-3" />
                     DOI: {selected.doi}
-                  </div>
+                  </a>
                 )}
+
+                <a
+                  href="https://scholar.google.com/citations?user=YR8dN_0AAAAJ&hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs font-body font-medium text-sky-400 hover:text-sky-300 transition-colors bg-sky-400/10 px-3 py-1.5 rounded-full w-fit"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=scholar.google.com&sz=64"
+                    alt="Google Scholar"
+                    className="w-4 h-4"
+                  />
+                  View on Google Scholar
+                </a>
 
                 {selected.achievements.length > 0 && (
                   <div>
