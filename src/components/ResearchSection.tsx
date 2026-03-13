@@ -92,19 +92,7 @@ const ResearchSection = () => {
   return (
     <section id="research" className="section-padding max-w-4xl mx-auto">
       <AnimatedSection>
-        <div className="flex items-center gap-4 mb-16 flex-wrap">
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-gradient inline-block">Research</h2>
-          <a
-            href="https://orcid.org/0009-0001-4455-0050"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs font-body font-medium text-[hsl(var(--primary))] hover:text-[hsl(var(--primary)/0.8)] transition-colors bg-[hsl(var(--primary)/0.1)] px-3 py-1.5 rounded-full"
-          >
-            <img src="https://www.google.com/s2/favicons?domain=orcid.org&sz=64" alt="ORCID" className="w-4 h-4" />
-            ORCID Profile
-            <ExternalLink className="w-3 h-3" />
-          </a>
-        </div>
+        <h2 className="font-heading text-3xl md:text-5xl font-bold mb-16 text-gradient inline-block">Research</h2>
       </AnimatedSection>
 
       <div className="space-y-4">
