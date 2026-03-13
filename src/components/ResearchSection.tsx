@@ -92,19 +92,7 @@ const ResearchSection = () => {
   return (
     <section id="research" className="section-padding max-w-4xl mx-auto">
       <AnimatedSection>
-        <div className="flex items-center gap-4 mb-16 flex-wrap">
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-gradient inline-block">Research</h2>
-          <a
-            href="https://orcid.org/0009-0001-4455-0050"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs font-body font-medium text-[hsl(var(--primary))] hover:text-[hsl(var(--primary)/0.8)] transition-colors bg-[hsl(var(--primary)/0.1)] px-3 py-1.5 rounded-full"
-          >
-            <img src="https://www.google.com/s2/favicons?domain=orcid.org&sz=64" alt="ORCID" className="w-4 h-4" />
-            ORCID Profile
-            <ExternalLink className="w-3 h-3" />
-          </a>
-        </div>
+        <h2 className="font-heading text-3xl md:text-5xl font-bold mb-16 text-gradient inline-block">Research</h2>
       </AnimatedSection>
 
       <div className="space-y-4">
@@ -127,6 +115,28 @@ const ResearchSection = () => {
           </AnimatedSection>
         ))}
       </div>
+
+      <AnimatedSection delay={0.3}>
+        <div className="flex flex-wrap items-center justify-center gap-3 mt-10">
+          {[
+            { label: "ORCID", url: "https://orcid.org/0009-0001-4455-0050", domain: "orcid.org", color: "text-emerald-400 bg-emerald-400/10 hover:bg-emerald-400/20" },
+            { label: "Google Scholar", url: "https://scholar.google.com/citations?user=YR8dN_0AAAAJ&hl=en", domain: "scholar.google.com", color: "text-sky-400 bg-sky-400/10 hover:bg-sky-400/20" },
+            { label: "SciProfiles", url: "https://sciprofiles.com/profile/MdTwashinIlahi", domain: "sciprofiles.com", color: "text-amber-400 bg-amber-400/10 hover:bg-amber-400/20" },
+          ].map((p) => (
+            <a
+              key={p.label}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 text-xs font-body font-semibold px-4 py-2 rounded-full transition-colors ${p.color}`}
+            >
+              <img src={`https://www.google.com/s2/favicons?domain=${p.domain}&sz=64`} alt={p.label} className="w-4 h-4" />
+              {p.label}
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          ))}
+        </div>
+      </AnimatedSection>
 
       <Dialog open={!!selected} onOpenChange={() => setSelected(null)}>
         <DialogContent className="glass-card border-border bg-card/95 backdrop-blur-2xl max-w-lg max-h-[80vh] overflow-y-auto">
