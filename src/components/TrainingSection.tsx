@@ -29,12 +29,12 @@ const programs = [
   {
     title: "Free Ventures Bootcamp",
     org: "UC Berkeley",
-    date: "2024",
+    date: "2026",
     badge: "Full Ride",
     notes: [
-      "Berkeley's premier pre-seed accelerator fellowship for student founders.",
-      "Gained hands-on exposure to venture capital, startup scaling, and founder fundamentals.",
-      "Engaged with UC Berkeley's world-class startup ecosystem and mentor network.",
+      "Selected for the inaugural bootcamp from a highly competitive applicant pool.",
+      "Berkeley's premier pre-seed accelerator — learning venture capital, startup scaling, and founder fundamentals.",
+      "Engaging with UC Berkeley's world-class startup ecosystem and mentor network.",
     ],
     url: "https://www.freeventures.org",
   },
