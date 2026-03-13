@@ -70,7 +70,7 @@ const items = [
 
   // United Nations
   { src: galleryUnAssembly, label: "UN General Assembly Hall" },
-  { src: galleryUnAssembly2, label: "UN General Assembly – Standing" },
+  { src: galleryUnAssembly2, label: "UN Security Council" },
   { src: galleryUnCouncil, label: "UN Trusteeship Council" },
   { src: galleryUnMural, label: "UN Headquarters – Mural Hall" },
   { src: galleryUnWelcome, label: "Welcome to the United Nations" },
