@@ -37,13 +37,6 @@ const newsItems = [
     favicon: "https://www.google.com/s2/favicons?domain=scholar.google.com&sz=64",
     tag: "Research",
   },
-  {
-    outlet: "IJISRT",
-    title: "Safe Driving System — Volume 10, Issue 4, April 2025",
-    url: "https://www.ijisrt.com/Volume-10-2025_issue-4-april",
-    favicon: "https://www.google.com/s2/favicons?domain=ijisrt.com&sz=64",
-    tag: "Publication",
-  },
 ];
 
 const tagColors: Record<string, string> = {
